@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Euro Truck Service</title>
 	<link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
@@ -58,32 +59,32 @@
 					</button>
 					<ul class="navbar-list">
 						<li class="navbar-item">
-							<a href="#" class="navbar-link">
+							<a href="#" class="navbar-link nav_main">
 								Главная
 							</a>
 						</li>
 						<li class="navbar-item">
-							<a href="#" class="navbar-link">
+							<a href="#" class="navbar-link nav_services">
 								Услуги
 							</a>
 						</li>
 						<li class="navbar-item">
-							<a href="#" class="navbar-link">
+							<a href="#" class="navbar-link nav_who">
 								Кто мы
 							</a>
 						</li>
 						<li class="navbar-item">
-							<a href="#" class="navbar-link">
+							<a href="#" class="navbar-link nav_where">
 								Где мы
 							</a>
 						</li>
 						<li class="navbar-item">
-							<a href="#" class="navbar-link">
+							<a href="#" class="navbar-link nav_photo">
 								Наши фото
 							</a>
 						</li>
 						<li class="navbar-item">
-							<a href="#" class="navbar-link">
+							<a href="#" class="navbar-link nav_faq">
 								FAQ
 							</a>
 						</li>
@@ -95,6 +96,261 @@
 			</div>
 		</div>
 	</header>
+	<main class="main">
+		<section class="hero">
+			<div class="container hero-container">
+				<div class="hero-content">
+					<h1 class="hero-title">
+						Affordable truck service
+					</h1>
+					<h4 class="hero-subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nunc odio in et, lectus sit lorem id integer.
+					</h4>
+				</div>
+				<button class="hero-button btn-purple">
+					Запросить
+				</button>
+				<img src="img/hero-bg.png" alt="HERO_BG" class="hero-img">
+			</div>
+		</section>
+		<section class="services">
+			<div class="container services-container">
+				<div class="services-content">
+					<h3 class="services-title">
+						Любые услуги за ваши деньги
+					</h3>
+					<h4 class="services-subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+					</h4>
+				</div class="services-content">
+				<div class="services-cards">
+					<div class="services-card__template">
+						<div class="services-card__content">
+							<h4 class="services-card__title">
+								Б/у запчасти для грузовых авто из Европы
+							</h4>
+							<p class="services-card__subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+							</p>
+						</div>
+						<img src="img/first-card__img.png" alt="Колесо" class="services-card__img service-card__img__first">
+					</div>
+					<div class="services-card__template">
+						<div class="services-card__content">
+							<h4 class="services-card__title">
+								Автомойка грузовых и легковых авто
+							</h4>
+							<p class="services-card__subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nunc odio in et, lectus sit<br> lorem id integer.
+							</p>
+						</div>
+						<img src="img/second-card__img.png" alt="Машина" class="services-card__img service-card__img__second">
+					</div>
+					<div class="services-card__template">
+						<div class="services-card__content">
+							<h4 class="services-card__title">
+								Магазин аксессуаров
+							</h4>
+							<p class="services-card__subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nunc odio in et, lectus sit<br> lorem id integer.
+							</p>
+						</div>
+						<img src="img/third-card__img.png" alt="Акссесуары" class="services-card__img
+						service-card__img__third">
+					</div>
+					<div class="services-card__template">
+						<div class="services-card__content">
+							<h4 class="services-card__title">
+								Пункт замены масла легковых авто
+							</h4>
+							<p class="services-card__subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nunc odio in et, lectus sit<br> lorem id integer.
+							</p>
+						</div>
+						<img src="img/fourth-card__img.png" alt="Масло" class="services-card__img
+						services-card__img__fourth">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="who">
+			<div class="container who-container">
+				<div class="who-content">
+					<h3 class="who-title">
+						Кто мы такие?
+					</h3>
+					<p class="who-subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+					</p>
+				</div>
+				<div class="who-images__block" id="who-images__block">
+					<img src="img/scania_logo.png" alt="scania" class="who-image scania">
+					<img src="img/volvo_logo.png" alt="volvo" class="who-image volvo">
+					<img src="img/man_logo.png" alt="man" class="who-image man">
+					<img src="img/daf_logo.png" alt="da" class="who-image daf">
+					<img src="img/renault_logo.png" alt="renault" class="who-image renault">
+				</div>
+			</div>
+		</section>
+		<section class="where">
+			<div class="container where-container">
+				<div class="where-content">
+					<h3 class="where-title">
+						Где мы?
+					</h3>
+					<p class="where-subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+					</p>
+				</div>
+				<div class="where-adaptive">			
+				</div>
+			</div>
+		</section>
+		<section class="photo">
+			<div class="container photo-container">
+				<h4 class="photo-title">
+					Наши фотографии
+				</h4>
+				<div class="image-slider swiper">
+					<div class="image-slider__wrapper swiper-wrapper">
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/slider_first_item.png" alt="slider first image">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/slider_second_item.webp" alt="slider second item">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="img/slider_third_item.jpeg" alt="slider third item">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next button-next"></div>
+					<div class="swiper-button-prev button-prev"></div>
+					<div class="swiper-pagination slider-pagination"></div>
+				</div>
+		</section>
+		<section class="questions">
+			<div class="container questions-container">
+				<form action="#" class="questions-form">
+					<h3 class="form-title">
+						Остались вопросы?
+					</h3>
+					<p class="form-subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Nunc odio in et, lectus sit lorem id integer.
+					</p>
+					<input type="text" placeholder="Имя" class="form-input">
+					<input type="text" placeholder="Номер телефона" class="form-input">
+					<button class="btn-purple btn-form">Отправить</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container footer-container">
+			<div class="footer-logo__wrapper"><img src="img/footer_logo.png" alt="LOGO" class="footer-logo"></div>
+			
+			<ul class="footer-list">
+				<p class="footer-list__title">Навигация</p>
+				<li class="footer-item">
+					<a href="#" class="footer-link footer_nav_main">
+						Главная
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="#" class="footer-link nav_services">
+						Услуги
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="#" class="footer-link nav_who">
+						Кто мы
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="#" class="footer-link nav_where">
+						Где мы
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="#" class="footer-link nav_photo">
+						Наши фото
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="#" class="footer-link nav_faq">
+						FAQ
+					</a>
+				</li>
+			</ul>
+			<ul class="footer-list">
+				<p class="footer-list__title">Контакты</p>
+				<li class="footer-item">
+					<a href="tel:+77088038888" class="footer-link">
+						+7 (708) 803 88 88
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="tel:+77088038888" class="footer-link">
+						+7 (708) 803 88 88
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="tel:+77085151518" class="footer-link">
+						+7 (708) 51 51 518
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="tel:+77085151518" class="footer-link">
+						+7 (708) 51 51 518
+					</a>
+				</li>
+				<li class="footer-item viber">
+					<a href="tel:+77088028888" class="footer-link">
+						<img src="img/viber.svg" alt="viber">
+						+7 (708) 802 88 88
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="#" class="footer-link">
+						<img src="img/footer-icon.svg" alt="map">
+						г. Киев, ул. Ляляля 69
+					</a>
+				</li>
+			</ul>
+			<ul class="footer-list">
+				<p class="footer-list__title">Следите за нами</p>
+				<li class="footer-item facebook">
+					<a href="#" class="footer-link">
+						<img src="img/Facebook.svg" alt="Facebook">
+						truck_service_ofFicIaL
+					</a>
+				</li>
+				<li class="footer-item">
+					<a href="#" class="footer-link">
+						<img src="img/Instagram.svg" alt="Instagram">
+						truck_service_ofFicIaL
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="footer-copyright">
+				<p>Copyright © Truck Services 2022. All rights reserved.</p>
+				<p>Developed by Drainweb & Chopix</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/app.js"></script>
+
 </body>
 </html>
